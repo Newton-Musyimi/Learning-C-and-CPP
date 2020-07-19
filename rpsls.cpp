@@ -79,40 +79,186 @@ void rpsls::game_instructions(){
   Based on Notes from SAM KASS (http://www.samkass.com/theories/RPSSL.html)
   "
 }
+
 void rpsls::plays(){
   game_plays++;
 }
+
 int rpsls::get_plays(){
   return game_plays;
 }
+
 void rpsls::player_wins_counter(){
   player_wins++;
 }
+
 int rpsls::get_player_wins(){
   return player_wins;
 }
+
 void rpsls::pc_wins_counter(){
   pc_wins++;
 }
+
 int rpsls::get_pc_wins(){
   return pc_wins;
 }
+
 void rpsls::rock(int computer){
+  std::string outcome;
+  std::string pc;
+  switch(computer){
+    case 1:
+        outcome = "It is a tie";
+        pc = "Rock";
+        break;
+    case 2:
+        outcome = "Computer wins";
+        pc = "Paper";
+        break;
+    case 3:
+        outcome = "You have won, congratulations!";
+        pc = "Scissors";
+        break;
+    case 4:
+        outcome = "You have won, congratulations!";
+        pc = "Lizard";
+        break;
+    case 5:
+        outcome = "Computer wins!";
+        pc = "Spock";
+        break;
+    default:
+        std::cout <<"Invalid Input!<<std::endl";
+        break;
+  }
+  std::cout <<"You picked Rock and the computer picked "<<pc<<"\n"<<outcome<<std::endl;
+}//When user is Rock
 
-}
 void rpsls::paper(int computer){
+  std::string outcome;
+  std::string pc;
+  switch(computer){
+    case 1:
+        outcome = "You have won, congratulations!";
+        pc = "Rock";
+        break;
+    case 2:
+        outcome = "It is a tie";
+        pc = "Paper";
+        break;
+    case 3:
+        outcome = "Computer wins!";
+        pc = "Scissors";
+        break;
+    case 4:
+        outcome = "Computer wins";
+        pc = "Lizard";
+        break;
+    case 5:
+        outcome = "You have won, congratulations!";
+        pc = "Spock";
+        break;
+    default:
+        std::cout <<"Invalid Input!<<std::endl";
+        break;
+  }
+  std::cout <<"You picked Paper and the computer picked "<<pc<<"\n"<<outcome<<std::endl;
+}//When user is Paper
 
-}
 void rpsls::scissors(int computer){
+  std::string outcome;
+  std::string pc;
+  switch(computer){
+    case 1:
+        outcome = "Computer Wins";
+        pc = "Rock";
+        break;
+    case 2:
+        outcome = "You have won, congratulations!";
+        pc = "Paper";
+        break;
+    case 3:
+        outcome = "It is a tie";
+        pc = "Scissors";
+        break;
+    case 4:
+        outcome = "You have won, congratulations!";
+        pc = "Lizard";
+        break;
+    case 5:
+        outcome = "Computer wins";
+        pc = "Spock";
+        break;
+    default:
+        std::cout <<"Invalid Input!<<std::endl";
+        break;
+  }
+  std::cout <<"You picked Scissors and the computer picked "<<pc<<"\n"<<outcome<<std::endl;
+}//When user is scissors
 
-}
 void rpsls::lizard(int computer){
+  std::string outcome;
+  std::string pc;
+  switch(computer){
+    case 1:
+        outcome = "Computer wins";
+        pc = "Rock";
+        break;
+    case 2:
+        outcome = "You have won, congratulations!";
+        pc = "Paper";
+        break;
+    case 3:
+        outcome = "Computer wins";
+        pc = "Scissors";
+        break;
+    case 4:
+        outcome = "It is a tie";
+        pc = "Lizard";
+        break;
+    case 5:
+        outcome = "You have won, congratulations!";
+        pc = "Spock";
+        break;
+    default:
+        std::cout <<"Invalid Input!<<std::endl";
+        break;
+  }
+  std::cout <<"You picked Lizard and the computer picked "<<pc<<"\n"<<outcome<<std::endl;
+}//When user is lizard
 
-}
 void rpsls::spock(int computer){
+  std::string outcome;
+  std::string pc;
+  switch(computer){
+    case 1:
+        outcome = "You have won, congratulations!";
+        pc = "Rock";
+        break;
+    case 2:
+        outcome = "Computer wins";
+        pc = "Paper";
+        break;
+    case 3:
+        outcome = "You have won, congratulations!";
+        pc = "Scissors";
+        break;
+    case 4:
+        outcome = "Computer wins";
+        pc = "Lizard";
+        break;
+    case 5:
+        outcome = "It is a tie";
+        pc = "Spock";
+        break;
+    default:
+        std::cout <<"Invalid Input!<<std::endl";
+        break;
+  }
+  std::cout <<"You picked Spock and the computer picked "<<pc<<"\n"<<outcome<<std::endl;
+}//When the user is spock
 
-}
-//void rpsls::count(int count)
 void rpsls::overall_score(){
   int plays = rock_paper_scissors_lizard_spock.get_plays();
   int player = rock_paper_scissors_lizard_spock.get_player_wins();
