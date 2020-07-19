@@ -6,11 +6,8 @@ For more, check out the README file on
 
 int main(){
   srand(time(NULL));
-  bool game = true;
   rpsls rock_paper_scissors_lizard_spock = new rpsls();
   rock_paper_scissors_lizard_spock.game_instructions();
-  while(game){
-    intcount 
-    game = game_loop(game);
-  }
+  rock_paper_scissors_lizard_spock.game_loop(game);
+  rock_paper_scissors_lizard_spock.overall_score();
 }

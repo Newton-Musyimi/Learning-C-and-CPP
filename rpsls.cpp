@@ -7,52 +7,56 @@
 //Declarations - moved to header file
 
 //The game loop
-bool rpsls::game_loop(bool game){
-  bool get_instructions = false;
-  std::cout<<"Would you like to see the game instructions once again? (1=Yes, 0=No): ";
-  std::cin >> get_instructions;
-  if(get_instructions){
+void rpsls::game_loop(){    
+  bool game = true;
+  while(game){
+    plays();
+    bool get_instructions = false;
+    std::cout<<"Would you like to see the game instructions once again? (1=Yes, 0=No): ";
+    std::cin >> get_instructions;
+    if(get_instructions){
       game_instructions();
-  }
-  int computer = rand() % 5 + 1;
-  int user = 0;
-  std::cout << "=================================\n
-                rock paper scissors lizard spock!\n
-                =================================\n";
+    }
+    int computer = rand() % 5 + 1;
+    int user = 0;
+    std::cout << "=================================\n
+                  rock paper scissors lizard spock!\n
+                  =================================\n";
 
-  std::cout << "When you get the 'GO' pick one of the options below:\n
-                1) ROCK\n
-                2) PAPER\n
-                3) SCISSORS\n
-                4) LIZARD\n
-                5) SPOCK\n";
+    std::cout << "When you get the 'GO' pick one of the options below:\n
+                  1) ROCK\n
+                  2) PAPER\n
+                  3) SCISSORS\n
+                  4) LIZARD\n
+                  5) SPOCK\n";
   
-  std::cout << "Rock, Paper, Scissors, Lizard, Spock, GO!\n
-                Enter number: ";
-  std::cin>> user;
-  switch(user){
-    case 1:
+    std::cout << "Rock, Paper, Scissors, Lizard, Spock, GO!\n
+                  Enter number: ";
+    std::cin>> user;
+    switch(user){
+      case 1:
         rock(computer);
         break;
-    case 2:
+      case 2:
         paper(computer);
         break;
-    case 3:
+      case 3:
         scissors(computer);
         break;
-    case 4:
+      case 4:
         lizard(computer);
         break;
-    case 5:
+      case 5:
         spock(computer);
         break;
-    default:
+      default:
         std::cout <<"Invalid Input!<<std::endl";
         break;
+    }
+    std::cout<<"Play again? (1=Yes, 0=No): ";
+    std::cin >> game;
   }
-  std::cout<<"Play again? (1=Yes, 0=No): ";
-  std::cin >> game;
-  return game;
+ 
 }
 
 void rpsls::game_instructions(){
@@ -75,15 +79,62 @@ void rpsls::game_instructions(){
   Based on Notes from SAM KASS (http://www.samkass.com/theories/RPSSL.html)
   "
 }
-void rpsls::counter(){
-  game_count++;
+void rpsls::plays(){
+  game_plays++;
 }
-int rpsls::game_count(){
-  return game_count;
+int rpsls::get_plays(){
+  return game_plays;
 }
-void rpsls::rock(int computer);
-void rpsls::paper(int computer);
-void rpsls::scissors(int computer);
-void rpsls::lizard(int computer);
-void rpsls::spock(int computer);
-void rpsls::count(int count)
+void rpsls::player_wins_counter(){
+  player_wins++;
+}
+int rpsls::get_player_wins(){
+  return player_wins;
+}
+void rpsls::pc_wins_counter(){
+  pc_wins++;
+}
+int rpsls::get_pc_wins(){
+  return pc_wins;
+}
+void rpsls::rock(int computer){
+
+}
+void rpsls::paper(int computer){
+
+}
+void rpsls::scissors(int computer){
+
+}
+void rpsls::lizard(int computer){
+
+}
+void rpsls::spock(int computer){
+
+}
+//void rpsls::count(int count)
+void rpsls::overall_score(){
+  int plays = rock_paper_scissors_lizard_spock.get_plays();
+  int player = rock_paper_scissors_lizard_spock.get_player_wins();
+  int pc = rock_paper_scissors_lizard_spock.get_pc_wins();
+  std::string result = " ";
+  if(player>pc){
+    std::cout<< "Out of the "<<plays<< "matches played:\n
+                 \tYou won "<<player<<" matches\n
+                 \tPC won "<<pc<<" matches\n
+                 You are the overall WINNER of all the plays.\n
+                 \t\t\tCONGRATULATIONS!"<<std::endl;
+  }else if(player == pc){
+    std::cout<< "Out of the "<<plays<< "matches played:\n
+                 \tYou won "<<player<<" matches\n
+                 \tPC won "<<pc<<" matches\n
+                 It was a TIE!.\n
+                 \t\t\tBETTER LUCK NEXT TIME!"<<std::endl;
+  }else{
+    std::cout<< "Out of the "<<plays<< "matches played:\n
+                 \tYou won "<<player<<" matches\n
+                 \tPC won "<<pc<<" matches\n
+                 You are the overall LOOSER of all the matches.\n
+                 \t\t\tBETTER LUCK NEXT TIME!"<<std::endl;
+  }
+}
