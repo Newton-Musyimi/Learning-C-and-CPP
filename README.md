@@ -2,13 +2,13 @@
 This repository contains some of the programs I am developing while learning C and C++ in school and online.
 
 ## Compiling and Running
-To compile the file, **g++ <filename.cpp>**
+To compile the file, `g++ <filename.cpp>`
 
-This compiles to a *a.exe* file
+This compiles to a **a.exe** file
 
-To run the file, **./a.exe**
+To run the file `./a.exe`
 
-To compile with a custom executable file name, **g++ -o <customname.exe> <filename.cpp>**
+To compile with a custom executable file name, `g++ -o <customname.exe> <filename.cpp>`
 
 ## PROJECT A: ROCK, PAPER, SCISSORS ++
 
@@ -39,5 +39,3 @@ For the third and final version of the game, I switched up gears a bit and split
 1. [The main file](https://github.com/Newton-Musyimi/Learning-C-and-CPP/blob/master/Rock%20Paper%20Scissors%20Extended/rpslsGAME.cpp) which initializes the game and starts it.
 2. [The header file](https://github.com/Newton-Musyimi/Learning-C-and-CPP/blob/master/Rock%20Paper%20Scissors%20Extended/rpsls.hpp) which contains the class definition and the class members' declaration. 
 3. [The logic file](https://github.com/Newton-Musyimi/Learning-C-and-CPP/blob/master/Rock%20Paper%20Scissors%20Extended/rpsls.cpp) Where the game logic is coded. Also where the methods in the header file are defined.
-
-
