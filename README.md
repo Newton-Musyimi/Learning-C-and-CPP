@@ -27,6 +27,7 @@ The options and their abilities are:
 
 ### Program 2: Rock, Paper, Scissors + Lizard + Spock (EXTENDED)
 This is an extended version of RPS based on notes from [Sam Kass](http://www.samkass.com/theories/RPSSL.html).
+![The RPSLS image](Rock%20Paper%20Scissors%20Extended/RPSLS.gif)
 
 It introduces *Lizard* and *Spock* to the standard version.
 
