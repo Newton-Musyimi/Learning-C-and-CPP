@@ -47,7 +47,7 @@ For the third version of the game, I switched up gears a bit and split it into 3
 
 >390 total lines of code
 
-I also moved the code to its own [folder](https://github.com/Newton-Musyimi/Learning-C-and-CPP/tree/master/Rock%20Paper%20Scissors%20Extended) to make it easier to differentiate from Program 2.
+I also moved the code to its own [folder](https://github.com/Newton-Musyimi/Learning-C-and-CPP/tree/master/Rock%20Paper%20Scissors%20Extended) to make it easier to differentiate from the second version(Program 2).
 
 ### Program 4: Extended RPSLS GUI 
 This is the fourth and last version of the game. It has a GUI that allows players to either type in their choice or click on an interactive graphic on their screen.
