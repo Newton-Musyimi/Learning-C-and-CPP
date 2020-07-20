@@ -2,27 +2,34 @@
 This repository contains some of the programs I am developing while learning C and C++ in school and online.
 
 ## Compiling and Running
-To compile the file, g++ <filename.cpp>
-This compiles to a a.exe file
-To run the file, ./a.exe
-To compile with a custom executable file name, g++ -o <customname.exe> <filename.cpp>
+To compile the file, **g++ <filename.cpp>**
+
+This compiles to a *a.exe* file
+
+To run the file, **./a.exe**
+
+To compile with a custom executable file name, **g++ -o <customname.exe> <filename.cpp>**
 
 ## PROJECT A: ROCK, PAPER, SCISSORS ++
 
 ### Program 1: Rock, Paper, Scissors, Go!
-I made the standard version of Rock, Paper, Scissors(RPS).
+I made the standard version of Rock, Paper, Scissors(RPS)
+
 The rules are simple:
 1.  There are 5 options(1 to 5)
 2.  You can only pick one option during a match
 3.  When prompted, you will enter its number into the console
-The options and there abilities are:
+
+The options and their abilities are:
 1. Rock - Crushes Scissors
 2. Paper - Covers Rock
 3. Scissors - Cuts paper
 
-### Program 2: Rock, Paper, Scissors (EXTENDED)
+### Program 2: Rock, Paper, Scissors + Lizard + Spock (EXTENDED)
 This is an extended version of RPS based on notes from [Sam Kass](http://www.samkass.com/theories/RPSSL.html).
-It introduces 'Lizard' and 'Spock' to the standar version.
+
+It introduces *Lizard* and *Spock* to the standard version.
+
 The rules stay the same but there are 2 additional options and abilities:
 1. Lizard - Poisons Spock and eats Paper
 2. Spock - Smashes Scissors and vaporizes Rock
