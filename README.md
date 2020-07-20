@@ -29,6 +29,7 @@ The options and their abilities are:
 
 ### Program 2: Rock, Paper, Scissors + Lizard + Spock (EXTENDED)
 ![The RPSLS image](Rock%20Paper%20Scissors%20Extended/RPSLS.gif)
+
 This is a basic but extended version of RPS based on notes from [Sam Kass](http://www.samkass.com/theories/RPSSL.html).
 
 The code is [here](https://github.com/Newton-Musyimi/Learning-C-and-CPP/blob/master/rpsls_basic.cpp)
