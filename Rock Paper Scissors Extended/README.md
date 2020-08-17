@@ -1,3 +1,6 @@
+## MOVED
+I have moved the code of this game to its own [repository](https://github.com/Newton-Musyimi/Rock-Paper-Scissors-Extended). For updates, click [here](https://github.com/Newton-Musyimi/Rock-Paper-Scissors-Extended).
+
 ### Rock, Paper, Scissors + Lizard + Spock EXTENDED (Including Class)
 For the third version of the game, I switched up gears a bit and split it into 3 files:
 1. [The main file](https://github.com/Newton-Musyimi/Learning-C-and-CPP/blob/master/Rock%20Paper%20Scissors%20Extended/rpslsGAME.cpp) which initializes the game and starts it. (**13 lines of code**)
